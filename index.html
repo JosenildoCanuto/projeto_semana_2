@@ -3,74 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Agência XYZ</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <nav>Home</nav>
-        <nav>Sobre</nav>
-        <nav>Serviços</nav>
-        <nav>Portfólio</nav>
-        <nav>Contato</nav>
+        <nav>
+            <ul>
+                <li><a href="" class="nav homeh">Home</a></li>
+                <li><a href="" class="nav sobreh">Sobre</a></li>
+                <li><a href="" class="nav servicosh">Serviços</a></li>
+                <li><a href="" class="nav porth">Portfólio</a></li>
+                <li><a href="" class="nav contato">Contato</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <section>
-            <h1>Agência XYZ</h1>
-            <p>Oferecemos soluções de desenvolvimento web modernas e eficazes.</p>
-            <button>Saiba Mais</button>
+        <section class="inicioXYZ">
+            <h1 class="name">Agência XYZ</h1>
+            <p class="textmin">Oferecemos soluções de desenvolvimento web modernas e eficazes.</p>
+            <button class="btn-saiba-mais">Saiba Mais</button>
         </section>
         <section class="sobre">
+            <h1 class="title-sobre">Sobre Nós</h1>
             <img src="arquivos/team.jpg" alt="Um time de colaboradores em v desmonstrando força e confiança">
-            <p>
+            <p class="sobre-txt">
                 Somos uma equipe de desenvolvedores apaixonados por criar experiências digitais incríveis.
             </p>
-            <p>
+            <p class="sobre-txt">
                 Nosso compromisso é com a inovação e a excelência, e trabalhamos incansavelmente para trazer
                 as mais recentes technologia e tendências para cada projeto.
             </p>
-            <p>
+            <p class="sobre-txt">
                 Cada membro da nossa equipe é altamente qualificado e possui profunda compreensão das melhores
                 práticas de desenvolvimento, o que nos permite entregar soluções robustas e eficazes.
             </p>
         </section>
-        <hr>
-        <section class="servicos">
-            <div class="box web">
-                <h1>Desenvolvimento Web</h1>
-                <p>Criamos sites responsivos e otimizados para diversos dispositivos.</p>
+        <hr class="line">
+        <section>
+            <div class="titulo-container">
+                <h1 class="title-nossos-servicos">Nossos Serviços</h1>
             </div>
-            <div class="box design">
-                <h1>Design Gráfico</h1>
-                <p>Desenvolvemos identidades visuais que destacam sua marca no mercado.</p>
-            </div>
-            <div class="box seo">
-                <h1>SEO</h1>
-                <p>Otimizamos seu site para melhor desempenho nos motores de busca.</p>
+            <div class="servicos">
+                <div class="box web">
+                    <div class="web-emoji">
+                        <p class="emoji">💻</p>
+                    </div>
+                    <h1 class="title-servicos element">Desenvolvimento Web</h1>
+                    <p class="txt-servicos">Criamos sites responsivos e otimizados para diversos dispositivos.</p>
+                </div>
+                <div class="box design">
+                    <div class="emoji design-emoji">🎨</div>
+                    <h1 class="title-servicos element">Design Gráfico</h1>
+                    <p class="txt-servicos">Desenvolvemos identidades visuais que destacam sua marca no mercado.</p>
+                </div>
+                <div class="box seo">
+                    <div class="emoji lupa-emoji">🔍</div>
+                    <h1 class="title-servicos element">SEO</h1>
+                    <p class="txt-servicos">Otimizamos seu site para melhor desempenho nos motores de busca.</p>
+                </div>
             </div>
         </section>
         <section class="port">
-            <h1>Nosso Portfólio</h1>
+            <h1 class="title-nosso-port">Nosso Portfólio</h1>
             <div class="imgs">
-                <img src="arquivos/port1.jpg" alt="">
-                <img src="arquivos/port2.jpg" alt="">
-                <img src="arquivos/port3.jpg" alt="">
-                <img src="arquivos/port3.jpg" alt="">
+                <img class= "img-port one-img" src="arquivos/port1.jpg" alt="">
+                <img class= "img-port two-img" src="arquivos/port2.jpg" alt="">
+                <img class= "img-port three-img" src="arquivos/port3.jpg" alt="">
+                <img class= "img-port four-img" src="arquivos/port4.jpg" alt="">
             </div>
         </section>
-        <section>
-            <h1>Contato</h1>
-            <label for="name">Nome</label>
-            <input type="text" name="name" id="name">
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email">
-            <label for="mensagem">Mensagem</label>
-            <textarea name="mensagem" id="mensagem" rows="5"></textarea>
-            <input type="submit" value="Enviar">
+        <section class="contact">
+            <div class="contact-container">
+                <h1 class="title-contact">Contato</h1>
+                <label for="name">Nome:</label>
+                <input type="text" name="name" id="name">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+                <label for="mensagem">Mensagem:</label>
+                <textarea name="mensagem" id="mensagem" rows="5"></textarea>
+                <input class="btn-submit" type="submit" value="Enviar">
+            </div>
         </section>
     </main>
     <footer>
-        <p>Agencia XYZ</p>
-        <p>Todos direitos reservados.</p>
+        <div class="fim">
+            <div class="left">
+                <p>Agencia XYZ</p>
+                <p>Todos direitos reservados.
+                </p>
+            </div>
+            <div class="right">
+                <p>Feito por XYZ</p>
+            </div>
+        </div>
+        
     </footer>
 </body>
 </html>
